@@ -397,7 +397,7 @@ section {
     border-radius: 50%;
 }
 .social a:hover{
-	background-color:black;
+	background-color:#2dc997;
 	color:white;
 }
 @media (max-width: 991px) {
@@ -501,3 +501,12 @@ footer {
 #footer {
     height: 200px;
 }
+
+#footer .social {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    gap: 10px; /* Espace entre les icônes */
+    margin-top: 10px; /* Ajoute un peu d'espace en haut */
+}
+
+
