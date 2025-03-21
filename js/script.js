@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-    
     // Gestion de l'opacité du header
     const header = document.getElementById('header');
     const maxScroll = 500; // Scroll en pixels pour atteindre l'opacité maximale
@@ -75,12 +74,13 @@ function showImage(element) {
 }
 
 //pour fermer la navbar au click sur mobile
-document.querySelectorAll('.navbar-bs-collapse .nav-link').forEach(function(link) {
+  
+document.querySelectorAll('.navbar-collapse .nav-link').forEach(function(link) {
     link.addEventListener('click', function () {
       // Si le lien est un dropdown, on ne ferme pas la navbar
       if (link.getAttribute('data-bs-toggle') === 'dropdown') return;
       
-      const navbarCollapse = document.querySelector('.navbar-bs-collapse');
+      const navbarCollapse = document.querySelector('.navbar-collapse');
       const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse, {toggle: false});
       bsCollapse.hide();
     });

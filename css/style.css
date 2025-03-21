@@ -161,7 +161,7 @@ section {
         cursor: pointer;
     }
 
-    .navbar-bs-collapse {
+    .navbar-collapse {
         position: absolute;
         top: 100%;
         left: 50%;
