@@ -73,3 +73,16 @@ function showImage(element) {
     let imgSrc = element.src; // Récupère l'URL de l'image cliquée
     document.getElementById('modalImage').src = imgSrc; // Remplace l'image dans le modal
 }
+
+//pour fermer la navbar au click sur mobile
+document.querySelectorAll('.navbar-bs-collapse .nav-link').forEach(function(link) {
+    link.addEventListener('click', function () {
+      // Si le lien est un dropdown, on ne ferme pas la navbar
+      if (link.getAttribute('data-bs-toggle') === 'dropdown') return;
+      
+      const navbarCollapse = document.querySelector('.navbar-bs-collapse');
+      const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse, {toggle: false});
+      bsCollapse.hide();
+    });
+  });
+  
