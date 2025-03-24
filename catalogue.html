@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/details-styles.css">
-    <title>Porfolio details</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>    
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Humans Technology</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/catalogue-styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
 <body>
 
     <header id="header" class="navbar fixed-top navbar-expand-lg">
@@ -65,41 +68,39 @@
     </header>
 
     <main>
-        <!-- Portfolio details first feed -->
-        <section class="p-5 details-section-feed">
-            <h2 class="text-center text-white fs-1">Portfolio details</h2>
+        <section>
+            <nav class="navbar justify-content-center">
+                <li class="nav-item dropdown">
+                    <a class="navbar-brand" href="">PC</a>
 
-            <p class="text-center text-white">
-                Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias
-            </p>
-            <p class="text-center text-white">Home / Portfolio details</p>
-        </section>
+                    <!-- Second level -->
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Portables</a></li>
+                        <li><a class="dropdown-item" href="#">Tablettes</a></li>
+                        
+                        <li class="nav-item">
+                            <a class="dropdown-item" href="#">Tours</a>                   
 
-        <!-- Portfolio details section -->
-        <section class="container row flex-nowrap p-5">
-            <h2 hidden>Portfolio details</h2>
+                        </li>
+                    </ul>
+                </li>
+
             
-            <img class="col-9" src="/assets/details-images/product.jpg" alt="Picture"> 
 
-            <section class="col-4">
-                <article class="p-4">
-                    <h3 class="fs-4 fw-bold">Project information</h3>
+                <!-- Third level -->
+                <!--
+                
+                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Boitiers</a></li>
+                                <li><a class="dropdown-item" href="#">Cartes mère</a></li>
+                                <li><a class="dropdown-item" href="#">Processeurs</a></li>
+                            </ul>-->
 
-                    <div>
-                        <p>Category: Web design</p>
-                        <p>Client: ASU Company</p>
-                        <p>Project date: 01 March, 2020</p>
-                        <p>Project URL: www.example.com</p>
-                    </div>
-                </article>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="">Branchements</a>
+                </li>
+            </nav>
 
-                <article>
-                    <h3 class="fs-4 fw-bold">Exercitationem repudiandae officiis neque suscipit</h3>
-                    <p class="text-secondary">
-                        Autem ipsum nam porro corporis rerum. 
-                        Quis eos dolorem eos itaque inventore commodi labore quia quia.
-                    </p>
-                </article>
         </section>
     </main>
 
@@ -115,6 +116,6 @@
     </footer>
 
     <script src="../js/script.js"></script>
-
+    
 </body>
-</html
+</html>
