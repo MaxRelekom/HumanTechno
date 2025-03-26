@@ -17,8 +17,7 @@ section.details-section-feed, header, footer {
 
 /* Responsive mobile details */
 
-
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     /* Service */
     section.container {
         display: flex;
@@ -31,6 +30,7 @@ section.details-section-feed, header, footer {
         width: 100%;
     }
 
+    
     /* Portfolio */
     section.portfolio-description article {
         padding: 1em;
