@@ -67,6 +67,41 @@ document.addEventListener('DOMContentLoaded', () => {
     // Appels initiaux
     updateActiveLink();
     handleHeaderOpacity();
+
+
+          // Fonction pour lire un cookie par son nom
+          function getCookie(name) {
+            const cookies = document.cookie.split(';').map(cookie => cookie.trim());
+            for (let cookie of cookies) {
+              if (cookie.indexOf(name + '=') === 0) {
+                return cookie.substring(name.length + 1);
+              }
+            }
+            return null;
+          }
+    
+          // Créer une instance du modal via Bootstrap
+          const cookieModalElement = document.getElementById('cookieModal');
+          const cookieModal = new bootstrap.Modal(cookieModalElement, {
+            backdrop: 'static',
+            keyboard: false
+          });
+    
+          // Afficher le modal si le cookie de consentement n'existe pas
+          if (!getCookie("cookieConsent")) {
+            cookieModal.show();
+          }
+    
+          // Lorsque l'utilisateur clique sur "Accepter"
+          document.getElementById("acceptCookies").addEventListener("click", function () {
+            // Créer un cookie de consentement valable 365 jours
+            document.cookie = "cookieConsent=true; max-age=" + (365 * 24 * 60 * 60) + "; path=/";
+            cookieModal.hide();
+          });
+
+
+
+
 });
 function showImage(element) {
     let imgSrc = element.src; // Récupère l'URL de l'image cliquée

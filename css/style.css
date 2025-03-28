@@ -88,7 +88,7 @@ section {
 }
 
 .navbar-toggler .navbar-toggler-icon {
-    display: none; /* Cache l'icône Bootstrap */
+    display: none; 
 }
 
 .nav-link {
@@ -120,12 +120,12 @@ section {
 }
 
 .dropdown-item {
-    color: black; /* Texte noir par défaut */
+    color: black; 
     transition: background-color 0.3s, color 0.3s;
 }
 
 .dropdown-item:hover {
-    background-color: rgba(200, 200, 200, 0.5); /* Fond gris clair par défaut */
+    background-color: rgba(200, 200, 200, 0.5); 
 }
 
 @media (min-width: 992px) {
@@ -186,7 +186,6 @@ section {
     height: auto;
 }
 
-/* Pour centrer l'image About sur mobile */
 @media (max-width: 767px) {
     #about .offset-1 {
         margin-left: 0 !important;
@@ -207,7 +206,7 @@ section {
     font-weight: 700;
 }
 
-/* Réduction des tailles de police dans filler sur mobile */
+
 @media (max-width: 576px) {
     .filler span {
         font-size: 32px;
@@ -277,12 +276,11 @@ section {
 .layout ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap; /* Pour un meilleur comportement sur petits écrans */
+    flex-wrap: wrap;
     justify-content: center;
 }
 .product {
-    /* Suppression de la largeur fixe pour une meilleure adaptabilité */
-    /* width: 400px; */
+
     max-width: 100%;
 }
 
@@ -369,8 +367,8 @@ section {
 }
 
 .image img {
-    width: 150px !important;  /* Forcer une largeur fixe */
-    height: 150px !important; /* Forcer une hauteur fixe */
+    width: 150px !important; 
+    height: 150px !important; 
     object-fit: cover;
 }
 
@@ -436,8 +434,7 @@ section {
     }
 
     .team-card {
-        /* Pour mobile, on laisse la carte en pleine largeur.
-           La modification HTML (col-12 col-md-6) assurera 2 par ligne sur tablette. */
+
         width: 100%; 
         max-width: 100%; 
         overflow: hidden; 
@@ -512,15 +509,7 @@ iframe {
     z-index: 1;
 }
 
-/* --- Pour conserver le parallax tel qu'avant, on supprime le media query qui change la position de l'image ---
-@media (max-width: 768px) {
-    .parallax img {
-        position: relative;
-    }
-}
-*/
 
-/* Ajustements supplémentaires pour petits écrans */
 
 @media (max-width:1000px){
    .informations-filler{
