@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Human Techno</title>
+</head>
+<body>
+<main>
+    <section>
+        {% for pr in products_list %}
+        <h1>{{ pr.product_name }}</h1>
+        <p>{{ pr.price }}</p>
+        {% endfor %}
+    </section>
+</main>
+</body>
+</html>
